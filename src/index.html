@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Can Çevik</title>
+      <link rel="stylesheet" href="index.css" />
+   </head>
+   <body class="dark:bg-slate-950 bg-slate-50">
+      <!-- Header -->
+      <header
+         class="bg-[url('/assets/hero.png')] w-full h-[754px] bg-no-repeat bg-cover bg-center dark:bg-[url('/assets/hero-photoaidcom-darken.png')] dark:text-white"
+      >
+         <div class="max-w-[1112px] w-full mx-auto px-4">
+            <nav
+               class="h-[120px] flex gap-10 items-center justify-end max-lg:justify-start"
+            >
+               <ul class="flex gap-10 text-[14px] font-bold max-lg:hidden">
+                  <li>
+                     <a class="hover:text-[#F84646] duration-300" href="#">
+                        <span>Çözüm ve Hizmetler</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a class="hover:text-[#F84646] duration-300" href="#">
+                        <span>Ürünler</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a class="hover:text-[#F84646] duration-300" href="#">
+                        <span>Teknolojiler</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a class="hover:text-[#F84646] duration-300" href="#">
+                        <span>İnsan Kaynakları</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a class="hover:text-[#F84646] duration-300" href="#">
+                        <span>Kurumsal</span>
+                     </a>
+                  </li>
+               </ul>
+               <div class="w-6 h-5 hidden max-lg:block">
+                  <div class="w-full h-[3px] rounded-md bg-black mb-1"></div>
+                  <div class="w-full h-[3px] rounded-md bg-black mb-1"></div>
+                  <div class="w-full h-[3px] rounded-md bg-black mb-1"></div>
+               </div>
+               <!-- Dark Mode -->
+               <div class="max-lg:flex-1">
+                  <button class="left-[45px] top-9 w-12" onclick="darkMode()">
+                     <img src="../assets/dark.png" alt="icon" />
+                  </button>
+                  <button class="left-[90px] top-9 w-12" onclick="lightMode()">
+                     <img src="../assets/light.png" alt="icon" />
+                  </button>
+               </div>
+               <div>
+                  <button
+                     class="py-[10px] px-5 bg-[#F84646] text-[14px] rounded-md text-white font-bold hover:bg-[#ec6363] duration-300"
+                  >
+                     İletişim
+                  </button>
+               </div>
+            </nav>
+            <!-- Hero -->
+            <div class="max-w-[665px] mt-[90px] max-[375px]:text-center">
+               <h1
+                  class="text-[64px] leading-[82px] font-bold mb-[20px] max-lg:text-[56px] max-md:text-5xl max-[375px]:text-[36px] max-[375px]:leading-[50px] max-[300px]:text-[25px]"
+               >
+                  Bilgi Teknolojilerinde 23 Yıllık Tecrübe
+               </h1>
+               <p
+                  class="text-xl leading-9 mb-[50px] max-lg:text-[16px] max-[375px]:text-[12px] max-[375px]:leading-6"
+               >
+                  Müşterilerimizin yüksek kalite seviyelerini koruyabilmeleri
+                  için farklı sektörlerde tecrübe kazanmış uzman kadrolarımızla
+                  Proje Yönetimi, İş Analizi ve Test Yönetimi hizmetleri
+                  sunmaktayız.
+               </p>
+               <form class="max-w-[502px] flex relative items-center">
+                  <input
+                     class="w-full h-[73px] rounded-lg indent-8 max-[375px]:h-[50px] max-[375px]:indent-4 max-[375px]:text-[11px]"
+                     type="text"
+                     placeholder="Mail bültenimize kayıt ol"
+                  />
+                  <button
+                     class="absolute py-3 px-[38px] bg-[#F84646] rounded-lg font-bold leading-9 text-white right-[6px] max-[375px]:py-1 max-[375px]:px-4 max-[375px]:text-[11px] hover:bg-[#ec6363] duration-300"
+                  >
+                     Kayıt Ol
+                  </button>
+               </form>
+            </div>
+         </div>
+      </header>
+      <!-- Manege -->
+      <section class="py-[140px] max-[375px]:py-[40px] dark:text-white">
+         <div class="max-w-[1112px] w-full mx-auto px-4">
+            <div class="text-center">
+               <h2 class="text-4xl font-bold mb-[30px] max-[375px]:text-[26px]">
+                  Kalite ve Süreç Yönetimi
+               </h2>
+               <p
+                  class="text-2xl leading-10 tracking-[1px] max-[375px]:text-[18px]"
+               >
+                  Müşterilerimizin yüksek kalite seviyelerini koruyabilmeleri
+                  için farklı sektörlerde tecrübe kazanmış uzman kadrolarımızla
+                  Proje Yönetimi, İş Analizi ve Test Yönetimi hizmetleri
+                  sunmaktayız.
+               </p>
+            </div>
+            <div
+               class="mt-[90px] grid grid-cols-3 gap-[90px] max-lg:grid-cols-2 max-lg:justify-items-center max-md:grid-cols-1"
+            >
+               <div
+                  class="max-w-[316px] text-center flex flex-col items-center"
+               >
+                  <div class="relative">
+                     <div
+                        class="w-10 h-10 rounded-full bg-[#ff5392] absolute z-1 right-0"
+                     ></div>
+                     <img
+                        class="relative z-10"
+                        src="../assets/File.svg"
+                        alt="icon"
+                     />
+                  </div>
+                  <div>
+                     <h3 class="text-2xl font-bold mb-[10px]">
+                        Döküman Analizi
+                     </h3>
+                     <p class="text-lg">
+                        Ante vulputate ut at accumsan et. Feugiat at tempus, est
+                        senectus amet, elementum.
+                     </p>
+                  </div>
+               </div>
+               <div
+                  class="max-w-[316px] text-center flex flex-col items-center"
+               >
+                  <div class="relative">
+                     <div
+                        class="w-10 h-10 rounded-full bg-[#7553FF] absolute z-1 left-0 top-2"
+                     ></div>
+                     <img
+                        class="relative z-10"
+                        src="../assets/Star.svg"
+                        alt="icon"
+                     />
+                  </div>
+                  <div>
+                     <h3 class="text-2xl font-bold mb-[10px]">
+                        Kabul ve Değerlendirme
+                     </h3>
+                     <p class="text-lg">
+                        Ante vulputate ut at accumsan et. Feugiat at tempus, est
+                        senectus amet, elementum.
+                     </p>
+                  </div>
+               </div>
+               <div
+                  class="max-w-[316px] text-center flex flex-col items-center"
+               >
+                  <div class="relative">
+                     <div
+                        class="w-10 h-10 rounded-full bg-[#53C1FF] absolute z-1 right-[-10px] top-2"
+                     ></div>
+                     <img
+                        class="relative z-10"
+                        src="../assets/Crown.svg"
+                        alt="icon"
+                     />
+                  </div>
+                  <div>
+                     <h3 class="text-2xl font-bold mb-[10px]">
+                        İş Kuralları Analizi
+                     </h3>
+                     <p class="text-lg">
+                        Ante vulputate ut at accumsan et. Feugiat at tempus, est
+                        senectus amet, elementum.
+                     </p>
+                  </div>
+               </div>
+               <div
+                  class="max-w-[316px] text-center flex flex-col items-center"
+               >
+                  <div class="relative">
+                     <div
+                        class="w-10 h-10 rounded-full bg-[#53ACFF] absolute z-1 left-0 top-2"
+                     ></div>
+                     <img
+                        class="relative z-10"
+                        src="../assets/ChartBar.svg"
+                        alt="icon"
+                     />
+                  </div>
+                  <div>
+                     <h3 class="text-2xl font-bold mb-[10px]">
+                        Akış Diyagramları
+                     </h3>
+                     <p class="text-lg">
+                        Ante vulputate ut at accumsan et. Feugiat at tempus, est
+                        senectus amet, elementum.
+                     </p>
+                  </div>
+               </div>
+               <div
+                  class="max-w-[316px] text-center flex flex-col items-center"
+               >
+                  <div class="relative">
+                     <div
+                        class="w-10 h-10 rounded-full bg-[#FF5353] absolute z-1 right-0"
+                     ></div>
+                     <img
+                        class="relative z-10"
+                        src="../assets/ChartPieSlice.svg"
+                        alt="icon"
+                     />
+                  </div>
+                  <div>
+                     <h3 class="text-2xl font-bold mb-[10px]">
+                        Paydaş Analizi
+                     </h3>
+                     <p class="text-lg">
+                        Ante vulputate ut at accumsan et. Feugiat at tempus, est
+                        senectus amet, elementum.
+                     </p>
+                  </div>
+               </div>
+               <div
+                  class="max-w-[316px] text-center flex flex-col items-center"
+               >
+                  <div class="relative">
+                     <div
+                        class="w-10 h-10 rounded-full bg-[#FFBA53] absolute z-1 right-2 top-[-8px]"
+                     ></div>
+                     <img
+                        class="relative z-10"
+                        src="../assets/FigmaLogo.svg"
+                        alt="icon"
+                     />
+                  </div>
+                  <div>
+                     <h3 class="text-2xl font-bold mb-[10px]">DPrototipleme</h3>
+                     <p class="text-lg">
+                        Ante vulputate ut at accumsan et. Feugiat at tempus, est
+                        senectus amet, elementum.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Support -->
+      <section class="bg-[#F84646] py-[65px]">
+         <div class="max-w-[1112px] w-full mx-auto px-4">
+            <div class="text-center text-white mb-[60px]">
+               <h2
+                  class="text-5xl font-bold mb-4 max-lg:text-[40px] max-md:text-[35px]"
+               >
+                  Test Yönetimiyle Neler Sağlıyoruz?
+               </h2>
+               <p class="text-lg">IoT Destekli Çözümler</p>
+            </div>
+            <div
+               class="grid grid-cols-4 text-white max-lg:grid-cols-2 max-md:grid-cols-1 max-lg:justify-items-center max-lg:text-center"
+            >
+               <div
+                  class="max-w=[160px] flex gap-[35px] max-lg:flex-col max-lg:items-center"
+               >
+                  <p class="max-lg:text-sm">
+                     Olası Hataları Önceden<span class="block"
+                        >Belirliyoruz</span
+                     >
+                  </p>
+                  <img
+                     class="w-[30px] max-lg:rotate-90"
+                     src="../assets/Right.svg"
+                     alt="icon"
+                  />
+               </div>
+               <div
+                  class="max-w=[160px] flex gap-[35px] max-lg:flex-col max-lg:items-center"
+               >
+                  <p class="max-lg:text-sm">
+                     Yazılım Kalitesini<span class="block">Arttırıyoruz</span>
+                  </p>
+                  <img
+                     class="w-[30px] max-lg:rotate-90"
+                     src="../assets/Right.svg"
+                     alt="icon"
+                  />
+               </div>
+               <div
+                  class="max-w=[160px] flex gap-[35px] max-lg:flex-col max-lg:items-center"
+               >
+                  <p class="max-lg:text-sm">
+                     Oluşabilecek Riskleri<span class="block">Önlüyoruz</span>
+                  </p>
+                  <img
+                     class="w-[30px] max-lg:rotate-90"
+                     src="../assets/Right.svg"
+                     alt="icon"
+                  />
+               </div>
+               <div
+                  class="max-w=[160px] flex gap-[35px] max-lg:flex-col max-lg:items-center"
+               >
+                  <p class="max-lg:text-sm">
+                     Zaman ve Maliyetten<span class="block"
+                        >Tasarruf Sağlıyoruz</span
+                     >
+                  </p>
+                  <img
+                     class="w-[30px] max-lg:rotate-90"
+                     src="../assets/Right.svg"
+                     alt="icon"
+                  />
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- About -->
+      <section>
+         <div class="max-w-[1112px] w-full mx-auto px-4 dark:text-white">
+            <div
+               class="flex items-center justify-between pt-[130px] max-[980px]:flex-col max-[980px]:text-center"
+            >
+               <div class="max-w-[523px]">
+                  <h2
+                     class="text-[64px] font-semibold leading-[64px] mb-10 max-lg:text-[58px] max-[375px]:text-[38px]"
+                  >
+                     Kalite ve Süreç Yönetimi
+                  </h2>
+                  <p
+                     class="leading-8 text-[#808080] mb-14 max-lg:text-[14px] max-[375px]:text-[13px] dark:text-white"
+                  >
+                     Deneyimli kadromuz; birçok farklı sektörden deneyimli, PMP®
+                     sertifikasına sahip, uzman proje yöneticilerinden
+                     oluşmaktadır. Projelerinizin yönetimine destek olmak, zayıf
+                     olduğunu düşündüğünüz alanları güçlendirmek, uluslararası
+                     geçerliliği olan PMI® metodolojisini şirketinizde uygulamak
+                     ve geliştirmek için yanınızdayız.
+                  </p>
+                  <button
+                     class="py-[12px] px-14 bg-[#F84646] text-[14px] rounded-md text-white font-bold max-[980px]: mb-4 max-[375px]:w-full hover:bg-[#ec6363] duration-300"
+                  >
+                     Keşfet
+                  </button>
+               </div>
+               <div>
+                  <img
+                     class="max-lg:w-[424px]"
+                     src="../assets/about.png"
+                     alt="about"
+                  />
+               </div>
+            </div>
+            <div
+               class="flex items-center justify-between pt-[130px] pb-[160px] max-[980px]:flex-col-reverse max-[980px]:text-center max-[375px]:pt-[50px]"
+            >
+               <div>
+                  <img
+                     class="max-lg:w-[424px]"
+                     src="../assets/about2.png"
+                     alt="about"
+                  />
+               </div>
+               <div class="max-w-[523px]">
+                  <h2
+                     class="text-[64px] font-semibold leading-[64px] mb-10 max-lg:text-[58px] max-[375px]:text-[38px]"
+                  >
+                     Test Yönetimi ve Analizi
+                  </h2>
+                  <p
+                     class="leading-8 text-[#808080] mb-14 max-lg:text-[14px] max-[375px]:text-[13px] dark:text-white"
+                  >
+                     Danışmanlığını yürüttüğümüz projelerde yazılım hatalarını
+                     önlemek amacıyla gerçekleştirdiğimiz testleri her proje
+                     aşamasında manuel ya da test otomasyonu ile dikkatle
+                     uygulamaktayız. Deneyimli test ekibimiz, kurumlara yüksek
+                     kalitede yazılım testleri hizmeti ile baştan sona güvenli,
+                     kaliteli ve tatmin edici bir müşteri deneyimi sunmaktadır.
+                  </p>
+                  <button
+                     class="py-[12px] px-14 bg-[#F84646] text-[14px] rounded-md text-white font-bold max-[980px]: mb-4 max-[375px]:w-full hover:bg-[#ec6363] duration-300"
+                  >
+                     Keşfet
+                  </button>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Partners -->
+      <section class="bg-[#F4F5F7] py-14 dark:bg-slate-950 dark:text-white">
+         <div class="max-w-[1112px] w-full mx-auto px-4">
+            <div class="text-center">
+               <h2
+                  class="text-5xl leading-[64px] font-bold max-[340px]:text-[10px] max-sm:text-3xl"
+               >
+                  Referanslarımız
+               </h2>
+               <p class="text-[18px] leading-8 max-[375px]:text-xs">
+                  Bize güvenen ve beraber çalıştığımız iş ortaklarımız
+               </p>
+            </div>
+            <div
+               class="flex items-center justify-center gap-[24px] pt-12 max-[980px]:flex-col"
+            >
+               <div>
+                  <div
+                     class="w-[170px] h-[96px] bg-white rounded-2xl flex py-4 px-4 hover:scale-110 duration-200"
+                  >
+                     <img src="../assets/partners.svg" alt="partners" />
+                  </div>
+               </div>
+               <div
+                  class="max-[980px]:flex max-[980px]:gap-[24px] max-[580px]:flex-col max-[580px]:gap-0"
+               >
+                  <div
+                     class="w-[170px] h-[96px] bg-white rounded-2xl flex py-4 px-4 mb-6 hover:scale-110 duration-200"
+                  >
+                     <img src="../assets/partners2.svg" alt="partners" />
+                  </div>
+                  <div
+                     class="w-[170px] h-[96px] bg-white rounded-2xl flex py-4 px-4 hover:scale-110 duration-200"
+                  >
+                     <img src="../assets/partners3.svg" alt="partners" />
+                  </div>
+               </div>
+               <div
+                  class="max-[980px]:flex max-[980px]:gap-[24px] max-[580px]:flex-col max-[580px]:gap-0"
+               >
+                  <div
+                     class="w-[170px] h-[96px] bg-white rounded-2xl flex py-4 px-4 mb-6 hover:scale-110 duration-200"
+                  >
+                     <img src="../assets/partners4.svg" alt="partners" />
+                  </div>
+                  <div
+                     class="w-[170px] h-[96px] bg-white rounded-2xl flex py-4 px-4 mb-6 hover:scale-110 duration-200"
+                  >
+                     <img src="../assets/partners5.svg" alt="partners" />
+                  </div>
+                  <div
+                     class="w-[170px] h-[96px] bg-white rounded-2xl flex py-4 px-4 hover:scale-110 duration-200"
+                  >
+                     <img src="../assets/partners6.svg" alt="partners" />
+                  </div>
+               </div>
+               <div
+                  class="max-[980px]:flex max-[980px]:gap-[24px] max-[580px]:flex-col max-[580px]:gap-0"
+               >
+                  <div
+                     class="w-[170px] h-[96px] bg-white rounded-2xl flex py-4 px-4 mb-6 hover:scale-110 duration-200"
+                  >
+                     <img src="../assets/partners7.svg" alt="partners" />
+                  </div>
+                  <div
+                     class="w-[170px] h-[96px] bg-white rounded-2xl flex py-4 px-4 hover:scale-110 duration-200"
+                  >
+                     <img src="../assets/partners8.svg" alt="partners" />
+                  </div>
+               </div>
+               <div>
+                  <div
+                     class="w-[170px] h-[96px] bg-white rounded-2xl flex py-4 px-4 hover:scale-110 duration-200"
+                  >
+                     <img src="../assets/partners9.svg" alt="partners" />
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Contact -->
+      <section class="py-[160px] dark:text-white">
+         <div class="max-w-[1112px] w-full mx-auto px-4">
+            <div class="flex justify-center">
+               <div class="max-w-[645px] flex flex-col items-center">
+                  <div class="relative w-[120px]">
+                     <img
+                        class="relative z-10"
+                        src="../assets/Users.svg"
+                        alt="icon"
+                     />
+                     <div
+                        class="w-[61px] h-[61px] rounded-full bg-[#F84646] absolute z-1 top-0 right-2"
+                     ></div>
+                  </div>
+                  <div class="text-center">
+                     <h2 class="text-5xl font-bold mb-5 max-md:text-4xl">
+                        Bize Ulaşın
+                     </h2>
+                     <p class="text-[18px] mb-7 max-md:text-[16px]">
+                        Çözüm, hizmet ve ürünlerimiz hakkında detaylı bilgi için
+                        bizimle irtibata geçin.
+                     </p>
+                     <button
+                        class="py-[16px] px-10 bg-[#F84646] text-[24px] rounded-md text-white font-bold max-md:py-[14px] max-md:px-[30px] hover:bg-[#ec6363] duration-300"
+                     >
+                        Bize Ulaşın
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Footer -->
+      <footer class="bg-[#F8464A] py-[80px]">
+         <div class="max-w-[1112px] w-full mx-auto px-4">
+            <nav
+               class="grid grid-cols-4 max-md:grid-cols-2 max-md:gap-8 max-[410px]:grid-cols-1"
+            >
+               <ul class="flex flex-col gap-[24px]">
+                  <li class="text-white font-bold">Çözüm ve Hizmetler</li>
+                  <li class="text-[#E6E6E6]">
+                     <a class="hover:text-black duration-300" href="#"
+                        ><span>Yazılım Geliştirme</span></a
+                     >
+                  </li>
+                  <li class="text-[#E6E6E6]">
+                     <a class="hover:text-black duration-300" href="#"
+                        ><span>Outsourcing</span></a
+                     >
+                  </li>
+                  <li class="text-[#E6E6E6]">
+                     <a class="hover:text-black duration-300" href="#"
+                        ><span>Kalite ve Süreç Yönetimi</span></a
+                     >
+                  </li>
+                  <li class="text-[#E6E6E6]">
+                     <a class="hover:text-black duration-300" href="#"
+                        ><span>Danışmanlık</span></a
+                     >
+                  </li>
+                  <li class="text-[#E6E6E6]">
+                     <a class="hover:text-black duration-300" href="#"
+                        ><span>IoT Destekli Çözümler</span></a
+                     >
+                  </li>
+               </ul>
+               <ul class="flex flex-col gap-[24px]">
+                  <li class="text-white font-bold">Çözüm ve Hizmetler</li>
+                  <li class="text-[#E6E6E6]">
+                     <a class="hover:text-black duration-300" href="#"
+                        ><span>Yazılım Geliştirme</span></a
+                     >
+                  </li>
+                  <li class="text-[#E6E6E6]">
+                     <a class="hover:text-black duration-300" href="#"
+                        ><span>Outsourcing</span></a
+                     >
+                  </li>
+                  <li class="text-[#E6E6E6]">
+                     <a class="hover:text-black duration-300" href="#"
+                        ><span>Kalite ve Süreç Yönetimi</span></a
+                     >
+                  </li>
+                  <li class="text-[#E6E6E6]">
+                     <a class="hover:text-black duration-300" href="#"
+                        ><span>Danışmanlık</span></a
+                     >
+                  </li>
+               </ul>
+               <ul class="flex flex-col gap-[24px]">
+                  <li class="text-white font-bold">Çözüm ve Hizmetler</li>
+                  <li class="text-[#E6E6E6]">
+                     <a class="hover:text-black duration-300" href="#"
+                        ><span>Yazılım Geliştirme</span></a
+                     >
+                  </li>
+                  <li class="text-[#E6E6E6]">
+                     <a class="hover:text-black duration-300" href="#"
+                        ><span>Outsourcing</span></a
+                     >
+                  </li>
+                  <li class="text-[#E6E6E6]">
+                     <a class="hover:text-black duration-300" href="#"
+                        ><span>Kalite ve Süreç Yönetimi</span></a
+                     >
+                  </li>
+               </ul>
+               <ul class="flex flex-col gap-[24px]">
+                  <li class="text-white font-bold">Çözüm ve Hizmetler</li>
+                  <li class="text-[#E6E6E6]">
+                     <a class="hover:text-black duration-300" href="#"
+                        ><span>Yazılım Geliştirme</span></a
+                     >
+                  </li>
+                  <li class="text-[#E6E6E6]">
+                     <a class="hover:text-black duration-300" href="#"
+                        ><span>Outsourcing</span></a
+                     >
+                  </li>
+               </ul>
+            </nav>
+            <div class="flex justify-between mt-[50px] max-sm:flex-col">
+               <div>
+                  <p class="text-[#E6E6E6] max-sm:mb-9">
+                     © Copyright 2010-2021 - Can Çevik
+                  </p>
+               </div>
+               <div class="flex gap-[16px]">
+                  <a href="#"
+                     ><img src="../assets/MediumLogo.svg" alt="icon"
+                  /></a>
+                  <a href="#"
+                     ><img src="../assets/LinkedinLogo.svg" alt="icon"
+                  /></a>
+                  <a href="#"
+                     ><img src="../assets/TwitterLogo.svg" alt="icon"
+                  /></a>
+                  <a href="#"
+                     ><img src="../assets/InstagramLogo.svg" alt="icon"
+                  /></a>
+                  <a href="#"
+                     ><img src="../assets/FacebookLogo.svg" alt="icon"
+                  /></a>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <script src="./script.js"></script>
+   </body>
+</html>
