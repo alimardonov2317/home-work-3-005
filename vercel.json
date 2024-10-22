@@ -3,19 +3,19 @@
   "builds": [
     
     {
-      "src": "index.css",
+      "src": "/index.css",
       "use": "@vercel/static"
     },
     {
-      "src": "index.html",
+      "src": "src/index.html",
       "use": "@vercel/static"
     },
     {
-      "src": "main.css",
+      "src": "src/main.css",
       "use": "@vercel/static"
     },
     {
-      "src": "script.js",
+      "src": "src/script.js",
       "use": "@vercel/static"
     }
   ],
