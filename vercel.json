@@ -3,7 +3,7 @@
   "builds": [
     
     {
-      "src": "/index.css",
+      "src": "src/index.css",
       "use": "@vercel/static"
     },
     {
